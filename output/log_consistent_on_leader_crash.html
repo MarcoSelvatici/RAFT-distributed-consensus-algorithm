@@ -1,0 +1,116 @@
+<pre>╭─<font color="#4E9A06"><b>marco@marco-asus </b></font><font color="#3465A4"><b>da/cw/raft</b></font> <font color="#C4A000">‹master*› </font>
+╰─<b>$</b> make run                                                                                        <font color="#CC0000"><b>130 ↵</b></font>
+mix compile
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+<span style="background-color:#555753"><font color="#D3D7CF">server 2 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 3 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 5 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 4 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 1 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 3 [1] CANDIDATE  start election for term 1</font></span>
+<span style="background-color:#4E9A06"><font color="#D3D7CF">server 3 [1] LEADER  leader for term 1 ======================</font></span>
+time = 2000      db updates done = []
+time = 2000 client requests seen = []
+time = 2000           total seen = 0 max lag = 0
+
+time = 4000      db updates done = [{1, 66}, {2, 62}, {3, 66}, {4, 63}, {5, 62}]
+time = 4000 client requests seen = [{3, 69}]
+time = 4000           total seen = 69 max lag = 7
+
+time = 6000      db updates done = [{1, 104}, {2, 99}, {3, 104}, {4, 99}, {5, 99}]
+time = 6000 client requests seen = [{3, 109}]
+time = 6000           total seen = 109 max lag = 10
+
+time = 8000      db updates done = [{1, 134}, {2, 129}, {3, 134}, {4, 129}, {5, 129}]
+time = 8000 client requests seen = [{3, 139}]
+time = 8000           total seen = 139 max lag = 10
+
+time = 10000      db updates done = [{1, 156}, {2, 151}, {3, 156}, {4, 151}, {5, 151}]
+time = 10000 client requests seen = [{3, 161}]
+time = 10000           total seen = 161 max lag = 10
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: server 1 received unexpected :CRASH while follower</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 1 [1] FOLLOWER  checksum 6959441</font></span>
+time = 12000      db updates done = [{1, 156}, {2, 169}, {3, 174}, {4, 169}, {5, 170}]
+time = 12000 client requests seen = [{3, 179}]
+time = 12000           total seen = 179 max lag = 23
+
+time = 14000      db updates done = [{1, 156}, {2, 185}, {3, 191}, {4, 186}, {5, 186}]
+time = 14000 client requests seen = [{3, 196}]
+time = 14000           total seen = 196 max lag = 40
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: server 3 received unexpected :CRASH while leader</font></span>
+<span style="background-color:#4E9A06"><font color="#D3D7CF">server 3 [1] LEADER  checksum 11582859</font></span>
+time = 16000      db updates done = [{1, 156}, {2, 199}, {3, 199}, {4, 199}, {5, 199}]
+time = 16000 client requests seen = [{3, 203}]
+time = 16000           total seen = 203 max lag = 47
+
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 4 [2] CANDIDATE  start election for term 2</font></span>
+<span style="background-color:#4E9A06"><font color="#D3D7CF">server 4 [2] LEADER  leader for term 2 ======================</font></span>
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 3 going to sleep, sent = 100</font></span>
+time = 18000      db updates done = [{1, 156}, {2, 333}, {3, 199}, {4, 388}, {5, 337}]
+time = 18000 client requests seen = [{3, 203}, {4, 185}]
+time = 18000           total seen = 388 max lag = 232
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 1 going to sleep, sent = 100</font></span>
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 2 going to sleep, sent = 100</font></span>
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 4 going to sleep, sent = 100</font></span>
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 5 going to sleep, sent = 100</font></span>
+time = 20000      db updates done = [{1, 156}, {2, 439}, {3, 199}, {4, 500}, {5, 443}]
+time = 20000 client requests seen = [{3, 203}, {4, 297}]
+time = 20000           total seen = 500 max lag = 344
+
+time = 22000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 22000 client requests seen = [{3, 203}, {4, 297}]
+time = 22000           total seen = 500 max lag = 344
+
+time = 24000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 24000 client requests seen = [{3, 203}, {4, 297}]
+time = 24000           total seen = 500 max lag = 344
+
+time = 26000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 26000 client requests seen = [{3, 203}, {4, 297}]
+time = 26000           total seen = 500 max lag = 344
+
+time = 28000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 28000 client requests seen = [{3, 203}, {4, 297}]
+time = 28000           total seen = 500 max lag = 344
+
+time = 30000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 30000 client requests seen = [{3, 203}, {4, 297}]
+time = 30000           total seen = 500 max lag = 344
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: server 2 received unexpected :CRASH while follower</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 2 [2] FOLLOWER  checksum 73498699</font></span>
+time = 32000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 32000 client requests seen = [{3, 203}, {4, 297}]
+time = 32000           total seen = 500 max lag = 344
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: server 4 received unexpected :CRASH while leader</font></span>
+<span style="background-color:#4E9A06"><font color="#D3D7CF">server 4 [2] LEADER  checksum 73498699</font></span>
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 5 [3] CANDIDATE  start election for term 3</font></span>
+time = 34000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 34000 client requests seen = [{3, 203}, {4, 297}]
+time = 34000           total seen = 500 max lag = 344
+
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 5 [4] CANDIDATE  start election for term 4</font></span>
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: server 5 received unexpected :CRASH during election</font></span>
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 5 [4] CANDIDATE  checksum 73498699</font></span>
+time = 36000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 36000 client requests seen = [{3, 203}, {4, 297}]
+time = 36000           total seen = 500 max lag = 344
+
+time = 38000      db updates done = [{1, 156}, {2, 500}, {3, 199}, {4, 500}, {5, 500}]
+time = 38000 client requests seen = [{3, 203}, {4, 297}]
+time = 38000           total seen = 500 max lag = 344
+</pre>

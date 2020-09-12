@@ -1,0 +1,103 @@
+<pre>╭─<font color="#4E9A06"><b>marco@marco-asus </b></font><font color="#3465A4"><b>da/cw/raft</b></font> <font color="#C4A000">‹master*› </font>
+╰─<b>$</b> make run
+mix compile
+Compiling 1 file (.ex)
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+Raft at 192.168.1.80
+<span style="background-color:#555753"><font color="#D3D7CF">server 4 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 1 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 3 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 2 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#555753"><font color="#D3D7CF">server 5 [0] FOLLOWER  follower for term 0</font></span>
+<span style="background-color:#3465A4"><font color="#D3D7CF">server 5 [1] CANDIDATE  start election for term 1</font></span>
+<span style="background-color:#4E9A06"><font color="#D3D7CF">server 5 [1] LEADER  leader for term 1 ======================</font></span>
+time = 2000      db updates done = []
+time = 2000 client requests seen = []
+time = 2000           total seen = 0 max lag = 0
+
+time = 4000      db updates done = [{1, 2}, {2, 2}, {3, 2}, {4, 2}, {5, 3}]
+time = 4000 client requests seen = [{5, 4}]
+time = 4000           total seen = 4 max lag = 2
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 2 going to sleep, sent = 5</font></span>
+time = 6000      db updates done = [{1, 7}, {2, 7}, {3, 7}, {4, 7}, {5, 10}]
+time = 6000 client requests seen = [{5, 12}]
+time = 6000           total seen = 12 max lag = 5
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 5 going to sleep, sent = 5</font></span>
+time = 8000      db updates done = [{1, 14}, {2, 14}, {3, 14}, {4, 14}, {5, 17}]
+time = 8000 client requests seen = [{5, 19}]
+time = 8000           total seen = 19 max lag = 5
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 1 going to sleep, sent = 5</font></span>
+time = 10000      db updates done = [{1, 18}, {2, 18}, {3, 18}, {4, 18}, {5, 19}]
+time = 10000 client requests seen = [{5, 20}]
+time = 10000           total seen = 20 max lag = 2
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 3 going to sleep, sent = 5</font></span>
+time = 12000      db updates done = [{1, 20}, {2, 20}, {3, 19}, {4, 19}, {5, 21}]
+time = 12000 client requests seen = [{5, 22}]
+time = 12000           total seen = 22 max lag = 3
+
+time = 14000      db updates done = [{1, 21}, {2, 21}, {3, 21}, {4, 21}, {5, 22}]
+time = 14000 client requests seen = [{5, 23}]
+time = 14000           total seen = 23 max lag = 2
+
+time = 16000      db updates done = [{1, 22}, {2, 22}, {3, 23}, {4, 22}, {5, 23}]
+time = 16000 client requests seen = [{5, 24}]
+time = 16000           total seen = 24 max lag = 2
+
+<span style="background-color:#CC0000"><font color="#D3D7CF">HALT: monitor: Client 4 going to sleep, sent = 5</font></span>
+time = 18000      db updates done = [{1, 24}, {2, 24}, {3, 25}, {4, 23}, {5, 25}]
+time = 18000 client requests seen = [{5, 25}]
+time = 18000           total seen = 25 max lag = 2
+
+time = 20000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 20000 client requests seen = [{5, 25}]
+time = 20000           total seen = 25 max lag = 0
+
+time = 22000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 22000 client requests seen = [{5, 25}]
+time = 22000           total seen = 25 max lag = 0
+
+time = 24000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 24000 client requests seen = [{5, 25}]
+time = 24000           total seen = 25 max lag = 0
+
+time = 26000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 26000 client requests seen = [{5, 25}]
+time = 26000           total seen = 25 max lag = 0
+
+time = 28000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 28000 client requests seen = [{5, 25}]
+time = 28000           total seen = 25 max lag = 0
+
+time = 30000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 30000 client requests seen = [{5, 25}]
+time = 30000           total seen = 25 max lag = 0
+
+time = 32000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 32000 client requests seen = [{5, 25}]
+time = 32000           total seen = 25 max lag = 0
+
+time = 34000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 34000 client requests seen = [{5, 25}]
+time = 34000           total seen = 25 max lag = 0
+
+time = 36000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 36000 client requests seen = [{5, 25}]
+time = 36000           total seen = 25 max lag = 0
+
+time = 38000      db updates done = [{1, 25}, {2, 25}, {3, 25}, {4, 25}, {5, 25}]
+time = 38000 client requests seen = [{5, 25}]
+time = 38000           total seen = 25 max lag = 0
+</pre>
